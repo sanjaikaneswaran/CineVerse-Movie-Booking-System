@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+dist/
+
+# Environment files
+.env
+.env.local
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# PHP dependencies
+vendor/
+
+# Temporary files
+*.tmp

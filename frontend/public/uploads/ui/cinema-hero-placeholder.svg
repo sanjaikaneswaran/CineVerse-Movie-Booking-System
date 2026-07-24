@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#18121a"/>
+      <stop offset="1" stop-color="#050609"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="75%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#8d193b" stop-opacity=".52"/>
+      <stop offset="1" stop-color="#050609" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+  <g fill="#4d1726" stroke="#6e2338" stroke-width="5">
+    <rect x="80" y="720" width="300" height="270" rx="55"/><rect x="400" y="680" width="300" height="310" rx="55"/><rect x="720" y="700" width="300" height="290" rx="55"/><rect x="1040" y="660" width="300" height="330" rx="55"/><rect x="1360" y="710" width="300" height="280" rx="55"/>
+  </g>
+  <text x="960" y="360" text-anchor="middle" fill="#ffffff" opacity=".12" font-family="Arial,sans-serif" font-size="110" font-weight="700">CINEVERSE CINEMA</text>
+</svg>
