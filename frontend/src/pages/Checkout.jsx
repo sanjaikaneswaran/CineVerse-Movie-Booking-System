@@ -68,7 +68,7 @@ export default function Checkout() {
           <div className="payment-methods">
             {['visa', 'mastercard', 'amex'].map((method) => <button type="button" key={method} onClick={() => setForm((current) => ({ ...current, method }))} className={form.method === method ? 'active' : ''}>{method.toUpperCase()}</button>)}
           </div>
-          <label>Cardholder name<input name="cardholder_name" value={form.cardholder_name} onChange={updateField} placeholder="Sutharupan Thivishan" /></label>
+          <label>Cardholder name<input name="cardholder_name" value={form.cardholder_name} onChange={updateField}/></label>
           <label>Card number<div className="input-icon"><CreditCard size={18} /><input name="card_number" value={form.card_number} onChange={updateField} inputMode="numeric" placeholder="4242 4242 4242 4242" /></div></label>
           <div className="two-fields"><label>Expiry<input name="expiry" value={form.expiry} onChange={updateField} inputMode="numeric" placeholder="12/30" /></label><label>CVV<input name="cvv" value={form.cvv} onChange={updateField} inputMode="numeric" placeholder="123" /></label></div>
           <div className="dummy-info"><ShieldCheck size={20} /><p>This is a simulated payment for your university project. Use any 16 digits, any future expiry, and any 3-digit CVV.</p></div>
