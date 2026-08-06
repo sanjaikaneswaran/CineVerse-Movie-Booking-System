@@ -5,6 +5,7 @@ declare(strict_types=1);
 final class Database
 {
     private string $host = '127.0.0.1';
+    private string $port = '3307';
     private string $databaseName = 'cineverse';
     private string $username = 'root';
     private string $password = '';
@@ -17,7 +18,7 @@ final class Database
             return $this->connection;
         }
 
-        $dsn = "mysql:host={$this->host};dbname={$this->databaseName};charset={$this->charset}";
+        $dsn = "mysql:host={$this->host};port={$this->port};dbname={$this->databaseName};charset={$this->charset}";
 
         $this->connection = new PDO($dsn, $this->username, $this->password, [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
