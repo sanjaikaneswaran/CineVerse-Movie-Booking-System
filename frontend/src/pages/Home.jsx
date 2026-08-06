@@ -54,7 +54,7 @@ export default function Home() {
     <section id="experience" className="experience-section section-shell">
       <div className="section-title-row">
         <div><span className="kicker">THE CINEVERSE DIFFERENCE</span><h2>Every step feels cinematic.</h2></div>
-        <p>Strong UI is not decoration. It should make the booking flow faster, clearer, and more trustworthy.</p>
+        <p></p>
       </div>
       <div className="feature-grid">
         <article><span><Popcorn /></span><h3>Discover</h3><p>Search curated releases through immersive posters, trailers, and rich movie details.</p></article>

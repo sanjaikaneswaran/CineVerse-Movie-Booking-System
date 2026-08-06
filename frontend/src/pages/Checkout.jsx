@@ -64,14 +64,14 @@ export default function Checkout() {
       {error && <div className="alert error">{error}</div>}
       <div className="checkout-grid">
         <form className="payment-card" onSubmit={submitPayment}>
-          <div className="card-heading"><div><CreditCard /><span><strong>Dummy card payment</strong><small>No real payment will be processed</small></span></div><LockKeyhole size={20} /></div>
+          <div className="card-heading"><div><CreditCard /><span><strong>Card Payment</strong><small>Payment will be processed</small></span></div><LockKeyhole size={20} /></div>
           <div className="payment-methods">
             {['visa', 'mastercard', 'amex'].map((method) => <button type="button" key={method} onClick={() => setForm((current) => ({ ...current, method }))} className={form.method === method ? 'active' : ''}>{method.toUpperCase()}</button>)}
           </div>
           <label>Cardholder name<input name="cardholder_name" value={form.cardholder_name} onChange={updateField}/></label>
           <label>Card number<div className="input-icon"><CreditCard size={18} /><input name="card_number" value={form.card_number} onChange={updateField} inputMode="numeric" placeholder="4242 4242 4242 4242" /></div></label>
           <div className="two-fields"><label>Expiry<input name="expiry" value={form.expiry} onChange={updateField} inputMode="numeric" placeholder="12/30" /></label><label>CVV<input name="cvv" value={form.cvv} onChange={updateField} inputMode="numeric" placeholder="123" /></label></div>
-          <div className="dummy-info"><ShieldCheck size={20} /><p>This is a simulated payment for your university project. Use any 16 digits, any future expiry, and any 3-digit CVV.</p></div>
+          <div className="dummy-info"><ShieldCheck size={20} /><p>Use any 16 digits, future expiry, and 3-digit CVV.</p></div>
           <button className="primary-button wide" disabled={processing}>{processing ? 'Processing payment…' : `Pay LKR ${grandTotal.toFixed(2)}`}</button>
         </form>
         <aside className="order-summary">

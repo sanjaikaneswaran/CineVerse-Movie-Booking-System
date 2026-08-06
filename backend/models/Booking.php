@@ -26,7 +26,7 @@ final class Booking
             throw new RuntimeException('A maximum of 10 seats can be booked at once.');
         }
         if ($cardholderName === '' || !preg_match('/^\d{4}$/', $cardLastFour)) {
-            throw new RuntimeException('Enter valid dummy payment details.');
+            throw new RuntimeException('Enter valid payment details.');
         }
 
         $this->database->beginTransaction();
