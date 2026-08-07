@@ -30,8 +30,8 @@ const [password, setPassword] = useState("");
       <p className="eyebrow">WELCOME BACK</p>
       <h1>Enter the universe</h1>
       {error && <div className="alert error">{error}</div>}
-      <label>Email<input type="email" required value={email} onChange={(event) => setEmail(event.target.value)} /></label>
-      <label>Password<input type="password" required value={password} onChange={(event) => setPassword(event.target.value)} /></label>
+      <label>Email (e.g., sahan@example.com)<input type="email" required value={email} onChange={(event) => setEmail(event.target.value)} /></label>
+      <label>Password (e.g., at least 8 characters)<input type="password" required value={password} onChange={(event) => setPassword(event.target.value)} /></label>
       <button className="primary-button" disabled={isSubmitting}>{isSubmitting ? 'Signing in…' : 'Sign in'}</button>
       <p>New here? <Link to="/register">Create account</Link></p>
     </form>
